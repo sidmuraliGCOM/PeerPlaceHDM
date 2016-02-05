@@ -1,0 +1,40 @@
+<ion-view view-title="Stop Details">
+<ion-nav-buttons side="right">
+       <i class="icon menu-icon ion-share custom-icon" ng-click="showActionsheet()"></i>
+    </ion-nav-buttons>
+	 <ion-content>
+	  <div class="list">
+	  	<h3 align="center"><br>{{todo.id}}</h3>
+		  <label class="item item-input item-stacked-label">
+		    <p class ="Font" >{{todo.CustomerName}}</p>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		  <p class="Font">{{todo.address}}</p>
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		     <p class="Font">{{todo.UnitsOrdered}}</p>
+		  </label>
+	  </div>
+	   <div class="padding">
+			<button class="button icon-left ion-android-done button-block button-balanced"
+			ng-click="login()">Delivered</button>
+			<button class="button icon-left ion-android-close button-block button-assertive"
+			ng-click="moveToNotDeliveredPage()">Not Delivered</button>
+			<button class="button icon-left ion-android-add button-block button-calm"
+			ng-click="showDirectionsInMap()">Add Extra Meal</button>
+		</div>
+      <!-- <div class="list">
+        <h3 align="center"><br>{{todo.id}}</h3>
+        <p class ="Font" ><br>{{todo.CustomerName}}</p>
+        <p class="Font">{{todo.address}}</p>
+        <p class="Font">{{todo.UnitsOrdered}}</p>
+        <div class="padding">
+			<button class="button icon-left ion-android-done button-block button-balanced"
+			ng-click="login()">Delivered</button>
+			<button class="button icon-left ion-android-close button-block button-assertive"
+			ng-click="login()">Not Delivered</button>
+			<button class="button icon-left ion-android-add button-block button-calm"
+			ng-click="login()">Add Extra Meal</button>
+		</div> -->
+    </ion-content>
+</ion-view>

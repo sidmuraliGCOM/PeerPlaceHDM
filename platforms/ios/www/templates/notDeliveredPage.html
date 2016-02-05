@@ -1,0 +1,33 @@
+<ion-view view-title="Select Reason" ng-controller="NotDeliveredCtrl">
+   <!-- <ion-nav-buttons side="right">
+      <button class="button button-positive" ng-click="logout()">
+        Logout
+      </button>
+    </ion-nav-buttons> -->
+  <ion-content>
+  <div>
+   <ion-list>
+  <ion-radio ng-model="choice" ng-value="'A'">Reason 1</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'B'">Reason 2</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'C'">Reason 3</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'D'">Reason 4</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'E'">Reason 5</ion-radio>
+  <ion-radio ng-model="choice" ng-value="'F'">Reason 6</ion-radio>
+</ion-list>
+</div>
+<div class="padding">
+<button class="button button-block button-calm"
+        ng-click="moveToAlertPage()">Alert</button>
+
+<button class="button button-block button-calm"
+        ng-click="moveToMaps()">Submit</button>
+</div>
+
+  </ion-content>
+  <!-- <div class="bar bar-footer bar-stable">
+    <a href="#/add"
+      class="button button-assertive icon-left ion-compose">New Note</a>
+    <button class="button button-light icon-left ion-shuffle"
+      ng-click="toggleReordering()">Reorder</button>
+  </div> -->
+</ion-view>

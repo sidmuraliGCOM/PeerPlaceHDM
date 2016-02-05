@@ -1,0 +1,22 @@
+	<ion-view view-title="Route Details" ng-controller="ListCtrl">
+   <!-- <ion-nav-buttons side="right">
+      <button class="button" ng-click="logout()">
+        Logout
+      </button>
+    </ion-nav-buttons> -->
+  <ion-content>
+    <ion-list>
+    <div class="item item-divider">
+    Choose a stop!
+  </div>
+      <ion-item class="item-remove-animate item-icon-right" item-text-wrap
+        href="#/stopDetails"
+        ng-repeat="todo in todos" ui-sref='stopDetails({todoId: todo.id})' ng-class='{done: todo.done}'>		
+        <h2>{{todo.id}}</h2>
+        <p>{{todo.CustomerName}}</p>
+        <p>{{todo.address}}</p>
+        <i class="icon ion-arrow-right-b"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
